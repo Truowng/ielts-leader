@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+#homepage-advance {
+  margin-top: -220px;
+  position: relative;
+  z-index: 1;
+}
+#homepage-advance .advance {
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  padding: 40px 30px 50px;
+  height: 100%;
+}
+#homepage-advance .advance-icon {
+  width: 100px;
+  margin: 0 auto 35px;
+}
+#homepage-advance .advance-icon img {
+  width: 100%;
+}
+#homepage-advance .advance-title {
+  color: #b62030;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#homepage-advance .advance-desc {
+  font-size: 18px;
+  text-align: center;
+}
+
+#homepage-courses {
+  margin-top: 100px;
+}
+#homepage-courses .heading-block .title {
+  color: #1e2c76;
+}

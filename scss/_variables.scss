@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// FONT
+$font-family: "Roboto", sans-serif;
+$fw-thin: 100;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+// COLOR
+$white: #fff;
+$black: #000;
+$gray: #f3f3f3;
+$dark-gray: #676767;
+$red: #b62030;
+$navi: #1e2c76;
+
+// DIMENSION
+$header-height: 80px;
+$border-radius-m: 20px;
+$border-radius-l: 30px;
+
+// FUNCTION
+@mixin flex($direction: row, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
