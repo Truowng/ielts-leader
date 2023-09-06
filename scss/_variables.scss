@@ -23,7 +23,7 @@ $border-radius-m: 20px;
 $border-radius-l: 30px;
 
 // FUNCTION
-@mixin flex($direction: row, $justify, $align, $gap) {
+@mixin flex($direction, $justify, $align, $gap) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;

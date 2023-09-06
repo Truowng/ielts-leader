@@ -36,3 +36,19 @@
 #homepage-courses .heading-block .title {
   color: #1e2c76;
 }
+
+#homepage-teachers {
+  margin-top: 130px;
+  padding-top: 75px;
+  background-image: url("../assets/images/banner/teachers-bg.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+#homepage-teachers .heading-block .title {
+  color: #fff;
+}
+
+#homepage-method {
+  margin-top: 100px;
+}

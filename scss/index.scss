@@ -6,7 +6,7 @@
   position: relative;
   z-index: 1;
   .advance {
-    border-radius: $border-radius;
+    border-radius: $border-radius-m;
     background-color: $gray;
     padding: 40px 30px 50px;
     height: 100%;
@@ -45,3 +45,26 @@
   }
 }
 // END COURSES
+
+// START TEACHERS
+#homepage-teachers {
+  margin-top: 130px;
+  padding-top: 75px;
+  background-image: url("../assets/images/banner/teachers-bg.png");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+
+  .heading-block {
+    .title {
+      color: $white;
+    }
+  }
+}
+// END TEACHERS
+
+// START METHOD
+#homepage-method {
+  margin-top: 100px;
+}
+// END METHOD
