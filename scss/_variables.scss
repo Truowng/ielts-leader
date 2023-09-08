@@ -31,3 +31,41 @@ $border-radius-l: 30px;
   align-items: $align;
   gap: $gap;
 }
+
+// START BREAKPOINT VARIABLES
+@mixin extra-desktop {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin landscape-phone {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+// END BREAKPOINT VARIABLES

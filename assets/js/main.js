@@ -51,3 +51,12 @@ const swiperBlog = new Swiper("#homepage-blog .swiper", {
     },
   },
 });
+
+// Open menu
+
+const menuBtn = document.querySelector(".header-navbar-button");
+const menuMobile = document.querySelector(".header-navbar-list");
+
+menuBtn.addEventListener("click", () => {
+  menuMobile.classList.toggle("active");
+});

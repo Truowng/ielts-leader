@@ -4,6 +4,11 @@
   position: relative;
   z-index: 1;
 }
+@media only screen and (max-width: 1199px) {
+  #homepage-advance {
+    margin-top: -100px;
+  }
+}
 #homepage-advance .advance {
   border-radius: 20px;
   background-color: #f3f3f3;
