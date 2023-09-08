@@ -76,6 +76,10 @@ ul {
   padding: 10px 20px;
   min-width: 220px;
   font-size: 20px;
+
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .courses {
@@ -112,6 +116,10 @@ ul {
         margin: 0 auto;
         transform: translateX(20px);
         transition: all ease 0.5s;
+
+        @include tablet {
+          font-size: 18px;
+        }
       }
 
       &:hover,
@@ -132,6 +140,8 @@ ul {
       .row {
         flex-direction: column-reverse;
       }
+
+      padding: 0 20px 50px;
     }
 
     &::after {
@@ -159,6 +169,10 @@ ul {
       position: relative;
       z-index: 1;
 
+      @include desktop {
+        padding-right: 0;
+      }
+
       &-heading {
         margin-bottom: 50px;
         .title {
@@ -167,11 +181,19 @@ ul {
           font-weight: $fw-bold;
           color: $red;
           margin-bottom: 5px;
+
+          @include tablet {
+            font-size: 24px;
+          }
         }
         .desc {
           font-size: 18px;
           font-weight: $fw-bold;
           color: $dark-gray;
+
+          @include tablet {
+            font-size: 16px;
+          }
         }
       }
 
@@ -190,6 +212,10 @@ ul {
 
           .text {
             font-size: 18px;
+
+            @include tablet {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -202,6 +228,10 @@ ul {
         &-view-more {
           font-size: 20px;
           font-weight: $fw-bold;
+
+          @include tablet {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -441,6 +471,10 @@ ul {
     font-size: 48px;
     font-weight: $fw-black;
     color: $white;
+
+    @include tablet {
+      font-size: 30px;
+    }
   }
 }
 // END BANNER
@@ -456,6 +490,7 @@ ul {
       &-image {
         width: 100%;
         height: auto;
+
         img {
           width: 100%;
           object-fit: cover;
@@ -472,6 +507,10 @@ ul {
           text-align: center;
           margin-bottom: 5px;
           text-transform: uppercase;
+
+          @include tablet {
+            font-size: 16px;
+          }
         }
 
         .desc {
@@ -479,6 +518,10 @@ ul {
           text-align: center;
           color: $white;
           text-transform: uppercase;
+
+          @include tablet {
+            font-size: 14px;
+          }
         }
       }
 
@@ -512,6 +555,12 @@ ul {
     &-image {
       width: 100%;
       height: 100%;
+
+      @include desktop {
+        width: 70%;
+        margin: 0 auto;
+      }
+
       img {
         width: 100%;
         height: 100%;
@@ -522,6 +571,12 @@ ul {
       @include flex(column, center, unset, 35px);
       padding-left: 40px;
       height: 100%;
+
+      @include desktop {
+        padding-left: 0;
+        margin-top: 30px;
+        height: unset;
+      }
 
       &-item {
         &:last-child {
@@ -596,6 +651,10 @@ ul {
     margin-bottom: 75px;
     h2 {
       color: $white;
+
+      @include tablet {
+        font-size: 30px;
+      }
     }
   }
   .roadmap-image {
@@ -677,6 +736,10 @@ ul {
     @include flex(row, center, center, unset);
     height: 100%;
     position: relative;
+
+    @include desktop {
+      padding-bottom: 70px;
+    }
 
     &-image {
       width: 100%;

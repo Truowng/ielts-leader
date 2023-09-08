@@ -30,9 +30,19 @@
   margin-bottom: 15px;
   text-align: center;
 }
+@media only screen and (max-width: 991px) {
+  #homepage-advance .advance-title {
+    font-size: 18px;
+  }
+}
 #homepage-advance .advance-desc {
   font-size: 18px;
   text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  #homepage-advance .advance-desc {
+    font-size: 14px;
+  }
 }
 
 #homepage-courses {

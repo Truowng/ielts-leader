@@ -72,6 +72,11 @@ ul {
   min-width: 220px;
   font-size: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .main-button-m {
+    font-size: 18px;
+  }
+}
 
 .courses-tab-list {
   margin-bottom: 70px;
@@ -113,6 +118,11 @@ ul {
   transform: translateX(20px);
   transition: all ease 0.5s;
 }
+@media only screen and (max-width: 991px) {
+  .courses-tab-list-item-text {
+    font-size: 18px;
+  }
+}
 .courses-tab-list-item:hover, .courses-tab-list-item.active {
   background-color: #b62030;
 }
@@ -124,6 +134,9 @@ ul {
   position: relative;
 }
 @media only screen and (max-width: 1199px) {
+  .courses-info {
+    padding: 0 20px 50px;
+  }
   .courses-info .row {
     flex-direction: column-reverse;
   }
@@ -158,6 +171,11 @@ ul {
   position: relative;
   z-index: 1;
 }
+@media only screen and (max-width: 1199px) {
+  .courses-info-content {
+    padding-right: 0;
+  }
+}
 .courses-info-content-heading {
   margin-bottom: 50px;
 }
@@ -168,10 +186,20 @@ ul {
   color: #b62030;
   margin-bottom: 5px;
 }
+@media only screen and (max-width: 991px) {
+  .courses-info-content-heading .title {
+    font-size: 24px;
+  }
+}
 .courses-info-content-heading .desc {
   font-size: 18px;
   font-weight: 700;
   color: #676767;
+}
+@media only screen and (max-width: 991px) {
+  .courses-info-content-heading .desc {
+    font-size: 16px;
+  }
 }
 .courses-info-content-list-item {
   display: flex;
@@ -190,6 +218,11 @@ ul {
 .courses-info-content-list-item .text {
   font-size: 18px;
 }
+@media only screen and (max-width: 991px) {
+  .courses-info-content-list-item .text {
+    font-size: 14px;
+  }
+}
 .courses-info-content-cta {
   display: flex;
   flex-direction: row;
@@ -202,6 +235,11 @@ ul {
 .courses-info-content-cta-view-more {
   font-size: 20px;
   font-weight: 700;
+}
+@media only screen and (max-width: 991px) {
+  .courses-info-content-cta-view-more {
+    font-size: 18px;
+  }
 }
 .courses-info-image {
   display: flex;
@@ -440,6 +478,11 @@ ul {
   font-weight: 900;
   color: #fff;
 }
+@media only screen and (max-width: 991px) {
+  .banner-text {
+    font-size: 30px;
+  }
+}
 
 .teachers-list-item {
   cursor: pointer;
@@ -468,11 +511,21 @@ ul {
   margin-bottom: 5px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 991px) {
+  .teachers-list-item-info .name {
+    font-size: 16px;
+  }
+}
 .teachers-list-item-info .desc {
   font-size: 18px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 991px) {
+  .teachers-list-item-info .desc {
+    font-size: 14px;
+  }
 }
 .teachers-list-item.active .teachers-list-item-info, .teachers-list-item:hover .teachers-list-item-info {
   background-color: #b62030;
@@ -498,6 +551,12 @@ ul {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 1199px) {
+  .teachers-info-image {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 .teachers-info-image img {
   width: 100%;
   height: 100%;
@@ -512,6 +571,13 @@ ul {
   gap: 35px;
   padding-left: 40px;
   height: 100%;
+}
+@media only screen and (max-width: 1199px) {
+  .teachers-info-detail {
+    padding-left: 0;
+    margin-top: 30px;
+    height: unset;
+  }
 }
 .teachers-info-detail-item:last-child {
   margin-bottom: 0;
@@ -578,6 +644,11 @@ ul {
 }
 #roadmap .heading-block h2 {
   color: #fff;
+}
+@media only screen and (max-width: 991px) {
+  #roadmap .heading-block h2 {
+    font-size: 30px;
+  }
 }
 #roadmap .roadmap-image {
   width: 100%;
@@ -663,6 +734,11 @@ ul {
   gap: unset;
   height: 100%;
   position: relative;
+}
+@media only screen and (max-width: 1199px) {
+  .cta-slider {
+    padding-bottom: 70px;
+  }
 }
 .cta-slider-image {
   width: 100%;
