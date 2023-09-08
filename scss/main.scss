@@ -443,6 +443,11 @@ ul {
   &-image {
     width: 100%;
     position: relative;
+    margin-top: $header-height;
+
+    @include tablet {
+      min-height: 300px;
+    }
 
     &::after {
       content: "";
@@ -462,7 +467,7 @@ ul {
 
   &-text {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);
@@ -470,7 +475,10 @@ ul {
     text-transform: uppercase;
     font-size: 48px;
     font-weight: $fw-black;
+    text-align: center;
     color: $white;
+
+    width: 100%;
 
     @include tablet {
       font-size: 30px;
@@ -627,6 +635,12 @@ ul {
     @include flex(column, center, start, 30px);
     height: 100%;
     padding-left: 20px;
+
+    @include tablet {
+      padding-left: 0;
+      text-align: justify;
+    }
+
     .text {
       font-size: 18px;
     }
@@ -673,10 +687,19 @@ ul {
   border-top: 15px solid $red;
   padding-bottom: 64px;
 
+  @include tablet {
+    padding-top: 50px;
+  }
+
   .main-form {
     background-color: $white;
     border-radius: $border-radius-l;
     margin-top: -74px;
+
+    @include tablet {
+      margin-top: 0;
+    }
+
     &-heading {
       padding: 25px 40px;
       background-color: $navi;
