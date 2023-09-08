@@ -60,6 +60,11 @@
   background-position: top;
   background-repeat: no-repeat;
 }
+@media only screen and (max-width: 480px) {
+  #homepage-teachers {
+    background-size: 130%;
+  }
+}
 #homepage-teachers .heading-block .title {
   color: #fff;
 }

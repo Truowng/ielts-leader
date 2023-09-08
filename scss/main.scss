@@ -42,6 +42,10 @@ ul {
 // START GENERAL
 .heading-block {
   margin-bottom: 80px;
+
+  @include mobile {
+    margin-bottom: 50px;
+  }
   .title {
     font-size: 36px;
     font-weight: $fw-black;
@@ -136,7 +140,7 @@ ul {
     padding: 50px 50px 50px 50px;
     position: relative;
 
-    @include desktop {
+    @include tablet {
       .row {
         flex-direction: column-reverse;
       }
@@ -175,6 +179,10 @@ ul {
 
       &-heading {
         margin-bottom: 50px;
+
+        @include tablet {
+          margin: 0 auto 20px;
+        }
         .title {
           text-transform: uppercase;
           font-size: 32px;
@@ -184,6 +192,7 @@ ul {
 
           @include tablet {
             font-size: 24px;
+            text-align: center;
           }
         }
         .desc {
@@ -193,6 +202,7 @@ ul {
 
           @include tablet {
             font-size: 16px;
+            text-align: center;
           }
         }
       }
@@ -255,6 +265,12 @@ ul {
         object-fit: cover;
       }
     }
+  }
+}
+
+.swiper-slide {
+  @include landscape-phone {
+    padding: 0 10px;
   }
 }
 
@@ -508,6 +524,10 @@ ul {
         padding: 22px;
         background-color: $navi;
         transition: all ease 0.5s;
+
+        @include mobile {
+          padding: 22px 5px;
+        }
         .name {
           font-size: 20px;
           font-weight: $fw-black;
@@ -518,6 +538,10 @@ ul {
 
           @include tablet {
             font-size: 16px;
+          }
+
+          @include mobile {
+            font-size: 14px;
           }
         }
 
@@ -628,6 +652,9 @@ ul {
     &-explain {
       .text {
         font-size: 18px;
+        @include mobile {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -643,6 +670,10 @@ ul {
 
     .text {
       font-size: 18px;
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -713,6 +744,10 @@ ul {
         text-align: center;
         font-size: 20px;
         font-weight: $fw-black;
+
+        @include landscape-phone {
+          font-size: 18px;
+        }
       }
     }
     &-input {
@@ -747,6 +782,7 @@ ul {
       }
       select {
         font-style: italic;
+        height: 48px;
       }
     }
     .main-button-m {

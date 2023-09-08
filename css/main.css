@@ -40,6 +40,11 @@ ul {
 .heading-block {
   margin-bottom: 80px;
 }
+@media only screen and (max-width: 480px) {
+  .heading-block {
+    margin-bottom: 50px;
+  }
+}
 .heading-block .title {
   font-size: 36px;
   font-weight: 900;
@@ -133,7 +138,7 @@ ul {
   padding: 50px 50px 50px 50px;
   position: relative;
 }
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 991px) {
   .courses-info {
     padding: 0 20px 50px;
   }
@@ -179,6 +184,11 @@ ul {
 .courses-info-content-heading {
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 991px) {
+  .courses-info-content-heading {
+    margin: 0 auto 20px;
+  }
+}
 .courses-info-content-heading .title {
   text-transform: uppercase;
   font-size: 32px;
@@ -189,6 +199,7 @@ ul {
 @media only screen and (max-width: 991px) {
   .courses-info-content-heading .title {
     font-size: 24px;
+    text-align: center;
   }
 }
 .courses-info-content-heading .desc {
@@ -199,6 +210,7 @@ ul {
 @media only screen and (max-width: 991px) {
   .courses-info-content-heading .desc {
     font-size: 16px;
+    text-align: center;
   }
 }
 .courses-info-content-list-item {
@@ -264,6 +276,12 @@ ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .swiper-slide {
+    padding: 0 10px;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -511,6 +529,11 @@ ul {
   background-color: #1e2c76;
   transition: all ease 0.5s;
 }
+@media only screen and (max-width: 480px) {
+  .teachers-list-item-info {
+    padding: 22px 5px;
+  }
+}
 .teachers-list-item-info .name {
   font-size: 20px;
   font-weight: 900;
@@ -522,6 +545,11 @@ ul {
 @media only screen and (max-width: 991px) {
   .teachers-list-item-info .name {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .teachers-list-item-info .name {
+    font-size: 14px;
   }
 }
 .teachers-list-item-info .desc {
@@ -626,6 +654,11 @@ ul {
 .method-slogan-explain .text {
   font-size: 18px;
 }
+@media only screen and (max-width: 480px) {
+  .method-slogan-explain .text {
+    font-size: 14px;
+  }
+}
 .method-content {
   display: flex;
   flex-direction: column;
@@ -643,6 +676,11 @@ ul {
 }
 .method-content .text {
   font-size: 18px;
+}
+@media only screen and (max-width: 480px) {
+  .method-content .text {
+    font-size: 14px;
+  }
 }
 
 #roadmap {
@@ -707,6 +745,11 @@ ul {
   font-size: 20px;
   font-weight: 900;
 }
+@media only screen and (max-width: 767px) {
+  .cta .main-form-heading h2 {
+    font-size: 18px;
+  }
+}
 .cta .main-form-input {
   padding: 0 40px;
 }
@@ -744,6 +787,7 @@ ul {
 }
 .cta .main-form-input select {
   font-style: italic;
+  height: 48px;
 }
 .cta .main-form .main-button-m {
   margin: 0 auto;

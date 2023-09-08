@@ -68,6 +68,10 @@
   background-position: top;
   background-repeat: no-repeat;
 
+  @include mobile {
+    background-size: 130%;
+  }
+
   .heading-block {
     .title {
       color: $white;
