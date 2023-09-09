@@ -1,0 +1,13 @@
+@import "./variables";
+
+// START BLOG
+#handbook-blog {
+  margin-top: 40px;
+  .main-pagination {
+    margin-top: 26px;
+    @include landscape-phone {
+      margin-top: 0;
+    }
+  }
+}
+// END BLOG

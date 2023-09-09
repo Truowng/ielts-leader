@@ -88,6 +88,47 @@ ul {
   }
 }
 
+.main-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+.main-pagination-button-prev, .main-pagination-button-next, .main-pagination-page, .main-pagination-etc {
+  font-size: 20px;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 5px;
+  min-width: 52px;
+  background-color: #ededed;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+  .main-pagination-button-prev, .main-pagination-button-next, .main-pagination-page, .main-pagination-etc {
+    font-size: 18px;
+    padding: 8px 12px;
+    min-width: 38px;
+  }
+}
+.main-pagination-button-prev:hover, .main-pagination-button-next:hover, .main-pagination-page:hover, .main-pagination-etc:hover {
+  background-color: #b62030;
+  color: #fff;
+}
+.main-pagination-etc {
+  background-color: transparent;
+  cursor: default;
+}
+.main-pagination-etc:hover {
+  background-color: transparent;
+  color: #000;
+}
+.main-pagination-page.active {
+  background-color: #b62030;
+  color: #fff;
+}
+
 .courses-tab-list {
   margin-bottom: 70px;
 }
@@ -488,11 +529,6 @@ ul {
   width: 100%;
   position: relative;
 }
-@media only screen and (max-width: 991px) {
-  .banner-image {
-    min-height: 300px;
-  }
-}
 .banner-image::after {
   content: "";
   position: absolute;
@@ -508,7 +544,7 @@ ul {
 }
 @media only screen and (max-width: 991px) {
   .banner-image img {
-    min-height: 300px;
+    min-height: 150px;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -516,7 +552,7 @@ ul {
 }
 .banner-text {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   z-index: 1;
   transform: translate(-50%, -50%);

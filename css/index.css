@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media only screen and (max-width: 991px) {
+  #homepage-banner .banner-image img {
+    min-height: 300px;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+#homepage-banner .banner-text {
+  top: 30%;
+}
+
 #homepage-advance {
   margin-top: -220px;
   position: relative;

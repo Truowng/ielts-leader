@@ -1,5 +1,22 @@
 @import "./variables";
 
+// START BANNER
+#homepage-banner {
+  .banner-image {
+    img {
+      @include tablet {
+        min-height: 300px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .banner-text {
+    top: 30%;
+  }
+}
+// END BANNER
+
 // START ADVANCE
 #homepage-advance {
   margin-top: -220px;
