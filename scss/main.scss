@@ -645,12 +645,19 @@ ul {
     border-radius: $border-radius-m;
     background-color: $red;
     position: relative;
+    display: none;
+
+    &.active {
+      display: block;
+      animation: fadeInUp ease 0.75s;
+    }
 
     &::after {
       content: url(../assets/images/icon/caret-up.svg);
       position: absolute;
       top: -30px;
-      left: 100px;
+      left: 50%;
+      transform: translateX(-50%);
       width: 40px;
       height: 40px;
     }

@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -647,12 +657,18 @@ ul {
   border-radius: 20px;
   background-color: #b62030;
   position: relative;
+  display: none;
+}
+.teachers-info.active {
+  display: block;
+  animation: fadeInUp ease 0.75s;
 }
 .teachers-info::after {
   content: url(../assets/images/icon/caret-up.svg);
   position: absolute;
   top: -30px;
-  left: 100px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 40px;
   height: 40px;
 }

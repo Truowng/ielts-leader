@@ -73,6 +73,14 @@
       color: $navi;
     }
   }
+
+  .courses-info {
+    display: none;
+    &.active {
+      display: block;
+      animation: fadeInUp ease 0.75s;
+    }
+  }
 }
 // END COURSES
 

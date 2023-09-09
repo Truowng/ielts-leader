@@ -1,9 +1,13 @@
-export const setActive = (el) => {
-  const items = document.querySelectorAll(`${el}`);
-  items.forEach((item) => {
+export const handleTab = (tabItem, tabInfo) => {
+  const tabItems = document.querySelectorAll(`${tabItem}`);
+  const tabInfos = document.querySelectorAll(`${tabInfo}`);
+
+  tabItems.forEach((item, index) => {
     item.addEventListener("click", () => {
-      document.querySelector(`${el}.active`).classList.remove("active");
+      document.querySelector(`${tabItem}.active`).classList.remove("active");
+      document.querySelector(`${tabInfo}.active`).classList.remove("active");
       item.classList.add("active");
+      tabInfos[index].classList.add("active");
     });
   });
 };
