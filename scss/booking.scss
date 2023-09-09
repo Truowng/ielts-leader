@@ -13,3 +13,61 @@
   }
 }
 // END CTA
+
+// START SALE
+#booking-sale {
+  margin-top: 35px;
+  .heading-block {
+    margin-bottom: 0;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+    .title {
+    }
+  }
+  .booking-sale-item {
+    position: relative;
+    background-color: $gray-2;
+    border-radius: $border-radius-m;
+    @include flex(row, center, center, unset);
+    padding: 20px;
+    height: 100%;
+
+    &-icon {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      border-radius: 300px;
+      background-color: $red;
+      @include flex(row, center, center, unset);
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &-text {
+      font-size: 20px;
+      font-weight: $fw-bold;
+      text-align: center;
+      width: 70%;
+      @include tablet {
+        width: 70%;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+  }
+}
+// END SALE
+
+// START FOOTER
+#footer {
+  margin-top: 0;
+}
+// END FOOTER

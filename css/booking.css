@@ -9,3 +9,66 @@
 #booking-cta .main-form-input {
   padding-top: 40px;
 }
+
+#booking-sale {
+  margin-top: 35px;
+}
+#booking-sale .heading-block {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  #booking-sale .heading-block {
+    margin-bottom: 30px;
+  }
+}
+#booking-sale .booking-sale-item {
+  position: relative;
+  background-color: #ededed;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
+  padding: 20px;
+  height: 100%;
+}
+#booking-sale .booking-sale-item-icon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 300px;
+  background-color: #b62030;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: unset;
+}
+#booking-sale .booking-sale-item-icon img {
+  width: 40px;
+  height: 40px;
+}
+#booking-sale .booking-sale-item-text {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 70%;
+}
+@media only screen and (max-width: 991px) {
+  #booking-sale .booking-sale-item-text {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #booking-sale .booking-sale-item-text {
+    font-size: 16px;
+  }
+}
+
+#footer {
+  margin-top: 0;
+}
