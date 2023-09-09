@@ -52,6 +52,33 @@ const swiperBlog = new Swiper("#homepage-blog .swiper", {
   },
 });
 
+const swiperTips = new Swiper("#tips-slide .swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  speed: 750,
+  autoplay: {
+    delay: 3000,
+  },
+
+  breakpoints: {
+    1199: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  navigation: {
+    nextEl: ".tips-slide-button-next",
+    prevEl: ".tips-slide-button-prev",
+  },
+});
+
 // Open menu
 
 const menuBtn = document.querySelector(".header-navbar-button");

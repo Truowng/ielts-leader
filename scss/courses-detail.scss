@@ -1,0 +1,164 @@
+@import "./variables";
+
+// START BANNER
+#courses-detail-banner {
+  .banner-image {
+    &::after {
+      content: none;
+    }
+  }
+}
+// END BANNER
+
+// START SIGNUP
+#courses-detail-signup {
+  .signup-wrapper {
+    margin-top: 40px;
+    padding: 35px 55px;
+    background-color: $gray-2;
+    border-radius: $border-radius-m;
+    @include desktop {
+      padding: 30px 25px;
+    }
+    .signup-title {
+      font-size: 30px;
+      font-weight: $fw-bold;
+      color: $navi;
+      text-transform: uppercase;
+
+      @include desktop {
+        margin-bottom: 25px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .signup-input {
+      input {
+        padding: 10px 25px;
+        outline: none;
+        border: none;
+        border-radius: 300px;
+        font-size: 16px;
+        width: 100%;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+          display: none;
+        }
+
+        &::placeholder {
+          color: $dark-gray;
+        }
+      }
+      select {
+        width: 100%;
+        font-size: 16px;
+        border-radius: 300px;
+        outline: none;
+        border: none;
+        padding: 10px 25px;
+        color: $dark-gray;
+        height: 44px;
+      }
+    }
+
+    .main-button-m {
+      width: 100%;
+      padding: 7px 20px;
+      display: block;
+    }
+  }
+}
+// END SIGNUP
+
+// START PEOPLE
+#courses-detail-people {
+  margin-top: 100px;
+  @include tablet {
+    margin-top: 50px;
+  }
+  .heading-block {
+    .title {
+      color: $navi;
+    }
+  }
+
+  .row {
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .courses-detail-people-list {
+    li {
+      padding-left: 20px;
+      font-size: 20px;
+      margin-bottom: 25px;
+      position: relative;
+      @include tablet {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 5px;
+        height: 30px;
+        background-color: $red;
+      }
+    }
+  }
+
+  .courses-detail-people-image {
+    width: 100%;
+    height: 100%;
+
+    @include flex(row, center, center, unset);
+
+    img {
+      width: 100%;
+    }
+  }
+}
+// END PEOPLE
+
+// START ROUTE
+#courses-detail-route {
+  margin: 100px 0;
+  @include tablet {
+    margin: 50px 0;
+  }
+  .heading-block {
+    .title {
+      color: $navi;
+    }
+  }
+  .courses-detail-route-image {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+// END ROUTE
+
+// START METHOD
+#courses-detail-method {
+  padding: 80px 0;
+  background-color: $gray-2;
+  @include landscape-phone {
+    padding: 45px 0;
+  }
+}
+// END METHOD
+
+// START FOOTER
+#footer {
+  margin-top: 0;
+}
+// END FOOTER

@@ -1,0 +1,47 @@
+@import "./variables";
+
+// START BANNER
+#teachers-banner {
+  @include desktop {
+    height: 300px;
+  }
+  .banner-image {
+    height: 100%;
+  }
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    .banner-text {
+      width: 100%;
+      text-align: center;
+      position: unset;
+      transform: unset;
+    }
+  }
+}
+// END BANNER
+
+// START TEACHER
+#teachers-teachers {
+  margin-top: 35px;
+}
+// END TEACHER
+
+// START CTA
+#teachers-cta {
+  margin-top: 130px;
+  @include tablet {
+    margin-top: 74px;
+  }
+}
+// END CTA
+
+// START FOOTER
+#footer {
+  margin-top: 0;
+}
+// END FOOTER

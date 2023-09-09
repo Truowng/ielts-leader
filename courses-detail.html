@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LIBRARY -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/courses-detail.css" />
+    <title>Chi tiết khóa học</title>
+  </head>
+  <body>
+    <!-- START HEADER
+    ================================ -->
+    <header id="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="header-logo" title="header-logo">
+            <img
+              src="./assets/images/logo/logo.png"
+              alt="Ielts Leader"
+              title="Ielts Leader"
+            />
+          </a>
+          <nav class="header-navbar">
+            <ul class="header-navbar-list">
+              <li class="header-navbar-list-item">
+                <a
+                  href="#"
+                  class="header-navbar-list-item-link"
+                  title="Giới thiệu"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li class="header-navbar-list-item">
+                <a
+                  href="#"
+                  class="header-navbar-list-item-link"
+                  title="Khóa học"
+                  >Khóa học</a
+                >
+                <div class="header-navbar-list-item-icon">
+                  <img
+                    src="./assets/images/icon/caret-down.svg"
+                    alt="caret down"
+                  />
+                </div>
+                <ul class="header-navbar-list-item-dropdown">
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Khóa học">Khóa học</a>
+                  </li>
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Khóa học">Khóa học</a>
+                  </li>
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Khóa học">Khóa học</a>
+                  </li>
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Khóa học">Khóa học</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header-navbar-list-item">
+                <a
+                  href="#"
+                  class="header-navbar-list-item-link"
+                  title="Tips IELTS"
+                  >Tips IELTS</a
+                >
+                <div class="header-navbar-list-item-icon">
+                  <img
+                    src="./assets/images/icon/caret-down.svg"
+                    alt="caret down"
+                  />
+                </div>
+                <ul class="header-navbar-list-item-dropdown">
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Tips">Tips</a>
+                  </li>
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Tips">Tips</a>
+                  </li>
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Tips">Tips</a>
+                  </li>
+                  <li class="header-navbar-list-item-dropdown-link">
+                    <a href="#" title="Tips">Tips</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="header-navbar-list-item">
+                <a
+                  href="#"
+                  class="header-navbar-list-item-link"
+                  title="Cẩm nang IELTS"
+                  >Cẩm nang IELTS</a
+                >
+              </li>
+              <li class="header-navbar-list-item">
+                <a
+                  href="#"
+                  class="header-navbar-list-item-link"
+                  title="Giáo viên"
+                  >Giáo viên</a
+                >
+              </li>
+              <li class="header-navbar-list-item">
+                <a
+                  href="#"
+                  class="header-navbar-list-item-link"
+                  title="Đặt lịch hẹn"
+                  >Đặt lịch hẹn</a
+                >
+              </li>
+            </ul>
+            <div class="header-navbar-button">
+              <img
+                src="./assets/images/icon/hamberger.png"
+                alt="Menu"
+                title="Menu"
+              />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER
+    ================================ -->
+
+    <main>
+      <!-- START BANNER
+    ================================ -->
+      <section id="courses-detail-banner" class="banner">
+        <div class="banner-image">
+          <img
+            src="./assets/images/banner/banner5.png"
+            alt="Banner"
+            title="Banner"
+          />
+        </div>
+      </section>
+      <!-- END BANNER
+    ================================ -->
+
+      <!-- START SIGNUP
+    ================================ -->
+      <section id="courses-detail-signup">
+        <div class="container">
+          <div class="signup-wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-12 col-12 d-flex align-items-center">
+                <h2 class="signup-title">
+                  đăng kí <br />
+                  nhận tư vấn
+                </h2>
+              </div>
+              <div class="col-lg-9 col-12 col-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="signup-input">
+                      <input type="text" placeholder="Họ & tên" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="signup-input">
+                      <input type="number" placeholder="Số điện thoại" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="signup-input">
+                      <input type="mail" placeholder="Email" />
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="signup-input">
+                      <select name="job">
+                        <option hidden disabled selected>
+                          Bạn hiện đang là?
+                        </option>
+                        <option value="Sinh viên">Sinh viên</option>
+                        <option value="Học sinh">Học sinh</option>
+                        <option value="Người đi làm">Người đi làm</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="signup-input">
+                      <select name="place">
+                        <option hidden disabled selected>
+                          Cơ sở gần bạn nhất?
+                        </option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hồ Chí Minh">Học sinh</option>
+                        <option value="Huế">Huế</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <a href="#" title="Nhận tư vấn" class="main-button-m"
+                      >NHẬN TƯ VẤN</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- END SIGNUP
+    ================================ -->
+
+      <!-- START PEOPLE
+    ================================ -->
+      <section id="courses-detail-people">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">khóa học này dành cho những ai?</h2>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-6 col-md-12 col-12 d-flex align-items-center justify-content-center"
+            >
+              <ul class="courses-detail-people-list">
+                <li>Học viên mới bắt đầu hoặc bị mất gốc tiếng Anh</li>
+                <li>Học viên cần chứng chỉ IELTS để du học</li>
+                <li>
+                  Học sinh cần IELTS để miễn thi môn tiếng Anh trong kỳ thi quốc
+                  gia
+                </li>
+                <li>
+                  Học sinh cần IELTS để được xét tuyển thẳng vào các trường đại
+                  học top đầu
+                </li>
+                <li>Học sinh cần xây dựng nền tảng tiếng Anh toàn diện</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 mb-5 mb-lg-0">
+              <div class="courses-detail-people-image">
+                <img
+                  src="./assets/images/courses/people.png"
+                  alt="Người"
+                  title="Người"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END PEOPLE
+    ================================ -->
+
+      <!-- START ROUTE
+    ================================ -->
+      <section id="courses-detail-route">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">Nội dung chương trình</h2>
+          </div>
+          <div class="courses-detail-route-image">
+            <img
+              src="./assets/images/courses/route.png"
+              alt="route"
+              title="route"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- END ROUTE
+    ================================ -->
+
+      <!-- START MEDTHOD
+    ================================ -->
+      <section id="courses-detail-method" class="method">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">PHƯƠNG PHÁP ĐÀO TẠO TẠI IELTS LEADERS</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 mb-5 mb-lg-0">
+              <div class="method-slogan">
+                <div class="method-slogan-image">
+                  <img
+                    src="./assets/images/slogan/letter1.svg"
+                    alt="RIPL"
+                    title="RIPL"
+                  />
+                </div>
+                <div class="method-slogan-explain">
+                  <p class="text">
+                    <strong>R: Refined knowledge</strong> (Tính chắt lọc kiến
+                    thức)
+                  </p>
+                  <p class="text">
+                    <strong>I: Inspiration</strong> (Tính truyền cảm hứng trong
+                    lớp học)
+                  </p>
+                  <p class="text">
+                    <strong>P: Practice</strong> (Tính thực hành ngôn ngữ)
+                  </p>
+                  <p class="text">
+                    <strong>L: Logic</strong> (Tính logic chặt chẽ)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="method-content">
+                <p class="text">
+                  <strong>RIPL</strong> là phương pháp đào tạo đẩy mạnh năng lực
+                  nắm bắt và sử dụng ngôn ngữ tiếng Anh của học viên nhờ tính
+                  truyền cảm hứng, tính thực hành, luyện thi tinh gọn và logic.
+                </p>
+                <p class="text">
+                  Học viên <strong>IELTS LEADERS</strong> không chỉ đơn thuần
+                  được bồi dưỡng về mặt kiến thức logic, chắt lọc mà còn được
+                  thúc đẩy cảm hứng học tập, đẩy mạnh tính thực hành và phát
+                  triển khả năng tự khám phá kiến thức của bản thân. Chúng tôi
+                  đặt trọng tâm vào việc xây dựng chân dung một học trò thành
+                  công, sở hữu những tính cách, kỹ năng không thể thiếu trong
+                  thế kỷ 21.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END MEDTHOD
+    ================================ -->
+      <!-- START ROADMAP
+    ================================ -->
+      <section id="roadmap" class="mt-0">
+        <div class="container">
+          <div class="heading-block">
+            <h2 class="title">LỘ TRÌNH HỌC</h2>
+          </div>
+          <picture class="roadmap-image">
+            <source
+              media="(max-width: 991px)"
+              srcset="./assets/images/courses/roadmap-vertical.svg"
+            />
+            <img
+              src="./assets/images/courses/roadmap-horizontal.svg"
+              alt="Roadmap"
+              title="Roadmap"
+            />
+          </picture>
+        </div>
+      </section>
+      <!-- END ROADMAP
+    ================================ -->
+    </main>
+
+    <!-- START FOOTER
+    ================================ -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0">
+            <div class="footer-info">
+              <a href="#" class="footer-logo" title="logo">
+                <img
+                  src="./assets/images/logo/logo.png"
+                  alt="logo"
+                  title="logo"
+                />
+              </a>
+              <h2 class="footer-info-title">
+                TRUNG TÂM ĐÀO TẠO NGOẠI NGỮ IELTS LEADERS
+              </h2>
+              <div class="footer-info-social">
+                <a href="#" title="facebook" class="footer-info-social-link">
+                  <img
+                    src="./assets/images/icon/facebook.png"
+                    alt="facebook"
+                    title="facebook"
+                  />
+                </a>
+                <a href="#" title="youtube" class="footer-info-social-link">
+                  <img
+                    src="./assets/images/icon/youtube.png"
+                    alt="youtube"
+                    title="youtube"
+                  />
+                </a>
+                <a href="#" title="tiktok" class="footer-info-social-link">
+                  <img
+                    src="./assets/images/icon/tiktok.png"
+                    alt="tiktok"
+                    title="tiktok"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-5 mb-lg-0">
+            <div class="footer-link">
+              <h3 class="title">liên hệ</h3>
+              <ul>
+                <li class="footer-link-item">
+                  <div class="icon">
+                    <img
+                      src="./assets/images/icon/address.png"
+                      alt="address"
+                      title="address"
+                    />
+                  </div>
+                  <p class="text">
+                    Tầng 5, Tòa nhà Song Long Building <br />
+                    LS5, Trung Hoà, Cầu Giấy, Hà Nội
+                  </p>
+                </li>
+                <li class="footer-link-item">
+                  <div class="icon">
+                    <img
+                      src="./assets/images/icon/mail.png"
+                      alt="mail"
+                      title="mail"
+                    />
+                  </div>
+                  <a
+                    href="mailto: ieltsleaders23@gmail.com"
+                    title="ieltsleaders23@gmail.com"
+                    class="text"
+                    >ieltsleaders23@gmail.com</a
+                  >
+                </li>
+                <li class="footer-link-item">
+                  <div class="icon">
+                    <img
+                      src="./assets/images/icon/phone.png"
+                      alt="phone"
+                      title="phone"
+                    />
+                  </div>
+                  <a
+                    href="tel: 0247 300 1888"
+                    title="0247 300 1888"
+                    class="text"
+                    >0247 300 1888</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-12 mb-5 mb-lg-0">
+            <div class="footer-link">
+              <h3 class="title">liên kết nhanh</h3>
+              <ul>
+                <li class="footer-link-item">
+                  <a href="#" title="Giới thiệu">Giới thiệu</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" title="Các khóa học">Các khóa học</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" title="Tips IELTS">Tips IELTS</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" title="Cẩm nang IELTS">Cẩm nang IELTS</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="footer-link">
+              <h3 class="title">CHÍNH SÁCH</h3>
+              <ul>
+                <li class="footer-link-item">
+                  <a href="#" title="Chính sách mua khóa học"
+                    >Chính sách mua khóa học</a
+                  >
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" title="Chính sách học tập">Chính sách học tập</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" title="Bảo mật thông tin">Bảo mật thông tin</a>
+                </li>
+                <li class="footer-link-item">
+                  <a href="#" title="Hình thức thanh toán"
+                    >Hình thức thanh toán</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyrights">
+        <h3 class="footer-copyrights-text">
+          Copyright © 2023 IELTS LEADERS. All Rights Reserved.
+        </h3>
+      </div>
+    </footer>
+
+    <!-- END FOOTER
+    ================================ -->
+
+    <!-- LIBRARY -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- JS -->
+    <script type="module" src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

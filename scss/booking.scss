@@ -1,0 +1,15 @@
+@import "./variables";
+
+// START CTA
+#booking-cta {
+  border-top: none;
+  padding: 64px 0;
+  .main-form {
+    margin-top: 0;
+
+    &-input {
+      padding-top: 40px;
+    }
+  }
+}
+// END CTA

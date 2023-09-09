@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media only screen and (max-width: 1199px) {
+  #teachers-banner {
+    height: 300px;
+  }
+}
+#teachers-banner .banner-image {
+  height: 100%;
+}
+#teachers-banner .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+#teachers-banner .banner-content .banner-text {
+  width: 100%;
+  text-align: center;
+  position: unset;
+  transform: unset;
+}
+
+#teachers-teachers {
+  margin-top: 35px;
+}
+
+#teachers-cta {
+  margin-top: 130px;
+}
+@media only screen and (max-width: 991px) {
+  #teachers-cta {
+    margin-top: 74px;
+  }
+}
+
+#footer {
+  margin-top: 0;
+}

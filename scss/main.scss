@@ -557,6 +557,17 @@ ul {
       font-size: 30px;
     }
   }
+
+  &-desc {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    color: $white;
+    @include landscape-phone {
+      font-size: 14px;
+    }
+  }
 }
 // END BANNER
 
@@ -910,6 +921,10 @@ ul {
 
     &-info {
       @include flex(row, unset, center, 30px);
+
+      @include desktop {
+        gap: 15px;
+      }
 
       .views,
       .date {
