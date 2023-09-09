@@ -84,6 +84,10 @@ ul {
   @include tablet {
     font-size: 18px;
   }
+
+  @include mobile {
+    min-width: 170px;
+  }
 }
 
 .courses {
@@ -235,6 +239,10 @@ ul {
         width: 100%;
         margin-top: 60px;
 
+        @include landscape-phone {
+          margin-top: 20px;
+        }
+
         &-view-more {
           font-size: 20px;
           font-weight: $fw-bold;
@@ -304,6 +312,10 @@ ul {
     .header-logo {
       width: 223px;
 
+      @include mobile {
+        width: 160px;
+      }
+
       img {
         width: 100%;
       }
@@ -318,7 +330,7 @@ ul {
         @include flex(row, space-between, center, unset);
 
         @include desktop {
-          @include flex(column, start, start, 40px);
+          @include flex(column, start, start, 20px);
           position: fixed;
           top: $header-height;
           right: 0;
@@ -348,7 +360,7 @@ ul {
             position: relative;
 
             @include desktop {
-              padding: 15px 20px;
+              padding: 10px 20px;
               width: 100%;
             }
 
@@ -455,11 +467,11 @@ ul {
 // START BANNER
 .banner {
   position: relative;
+  margin-top: $header-height;
 
   &-image {
     width: 100%;
     position: relative;
-    margin-top: $header-height;
 
     @include tablet {
       min-height: 300px;
@@ -478,6 +490,12 @@ ul {
 
     img {
       width: 100%;
+
+      @include tablet {
+        min-height: 300px;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -511,6 +529,8 @@ ul {
 
       overflow: hidden;
       border-radius: $border-radius-m;
+      height: 100%;
+
       &-image {
         width: 100%;
         height: auto;
