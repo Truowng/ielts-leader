@@ -870,18 +870,32 @@ ul {
     }
   }
   &-slider {
-    @include flex(row, center, center, unset);
     height: 100%;
     position: relative;
 
     @include desktop {
       padding-bottom: 70px;
     }
+    .swiper {
+      height: 100%;
+      .swiper-wrapper {
+        height: 100%;
+        .swiper-slide {
+          @include flex(row, unset, center, unset);
+        }
+      }
+    }
 
     &-image {
       width: 100%;
       border-radius: $border-radius-m;
       overflow: hidden;
+      @include desktop {
+        margin: 15px 15px 0;
+      }
+      @include tablet {
+        margin: 0 15px;
+      }
       img {
         width: 100%;
       }
